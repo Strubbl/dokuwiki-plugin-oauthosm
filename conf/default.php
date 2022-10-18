@@ -1,6 +1,6 @@
 <?php
 /**
- * Default settings for the oauthgeneric plugin
+ * Default settings for the oauthosm plugin
  */
 
 $conf['key'] = '';

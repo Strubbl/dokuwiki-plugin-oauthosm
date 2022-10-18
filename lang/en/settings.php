@@ -1,6 +1,6 @@
 <?php
 /**
- * english language file for oauthgeneric plugin
+ * english language file for oauthosm plugin
  *
  * @author Andreas Gohr <dokuwiki@cosmocode.de>
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * Options for the oauthgeneric plugin
+ * Options for the oauthosm plugin
  */
 
 $meta['key'] = array('string');

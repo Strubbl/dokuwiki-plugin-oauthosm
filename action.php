@@ -1,19 +1,19 @@
 <?php
 
 use dokuwiki\plugin\oauth\Adapter;
-use dokuwiki\plugin\oauthgeneric\DotAccess;
-use dokuwiki\plugin\oauthgeneric\Generic;
+use dokuwiki\plugin\oauthosm\DotAccess;
+use dokuwiki\plugin\oauthosm\OpenStreetMap;
 
 /**
- * Service Implementation for oAuth Doorkeeper authentication
+ * Service Implementation for oAuth OpenStreetMap authentication
  */
-class action_plugin_oauthgeneric extends Adapter
+class action_plugin_oauthosm extends Adapter
 {
 
     /** @inheritdoc */
     public function registerServiceClass()
     {
-        return Generic::class;
+        return OpenStreetMap::class;
     }
 
     /** * @inheritDoc */
@@ -56,6 +56,9 @@ class action_plugin_oauthgeneric extends Adapter
         if (empty($name)) {
             $name = $user;
         }
+
+        // OSM does not provide the user's mail, so let's generate a fictional one being used only dokuwiki-internal
+        $mail .= "@openstreetmap.org";
 
         return compact('user', 'name', 'mail', 'grps');
     }

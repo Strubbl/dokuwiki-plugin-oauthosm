@@ -1,7 +1,7 @@
-base   oauthgeneric
-author Andreas Gohr
-email  dokuwiki@cosmocode.de
-date   2023-09-24
-name   oauth generic Service
-desc   Generic Service for use with the oAuth Plugin
-url    http://www.dokuwiki.org/plugin:oauthgeneric
+base   oauthosm
+author Sven Fischer
+email  dokuwiki-oauthosm@linux4tw.de
+date   2024-02-16
+name   oauth2 OpenStreetMap Service
+desc   OpenStreetMap Service for use with the oAuth2 Plugin, based on the oauthgeneric plugin
+url    http://www.dokuwiki.org/plugin:oauthosm
